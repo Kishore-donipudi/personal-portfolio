@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar </title>
+    <link rel="stylesheet" href="s.css" class="css">
+
+</head>
+<body>
+    <video autoplay muted loop id="bg-video">
+        <source src="../../video/galaxy.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    <header>
+        <nav>
+            <a href="#logo" class="logo"><h3>Kishore Donipudi</h3></a>
+            <div class="ham">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="home-section">
+        <h1>Welcome to my Portfolio</h1>
+        <p>I'm Kishore Donipudi, a B.Tech Graduate
+            who is passionate about <br><span class="highlight">Web development</span>, 
+            <span class="highlight">Data analysis</span> & <span class="highlight">Database Management</span>.
+        </p>
+       <a href="#contact"><button class="btn">Hire Me</button></a>
+        <a href="#"><button class="btn">Download CV</button></a>
+    </section>
+
+    <section id="about" class="about-section">
+        <h1>About Me</h1>
+        <p>I actively engage in learning and applying new technologies to enhance
+            my skills and deliver effective solutions.These are the technologies I specialize and Learning.</p>
+            <div class="container">
+                <div class="card">
+                    <h2><i class="fab fa-html5"></i> <i class="fab fa-css3-alt"></i> <i class="fab fa-js-square"></i> Html,css and JavaScript</h2>
+                    <p>Intermediate Level
+                    </p>
+                    <a href="IBMDesign20251116-33-ccmabw.pdf" target="_blank" class="btn"><i class="fas fa-certificate"></i> Certificate</a>
+
+                </div>
+                <div class="card">
+                    <h2><i class="fab fa-python"></i> Python</h2>
+                    <p>Intermediate Level
+                    </p>
+                    <a href="IBMDataScienceProfessionalCertificate.pdf" target="_blank" class="btn"><i class="fas fa-certificate"></i> Certificate</a>
+                    </div>
+                <div class="card">
+                    <h2><i class="fas fa-database"></i> SQL</h2>
+                    <p>Intermediate Level
+                    </p>
+                    <a href="#" target="_blank" class="btn"><i class="fas fa-certificate"></i> Certificate</a>
+                </div>
+            </div>
+
+    </section>
+
+
+
+
+
+    <script>
+const ham = document.querySelector('.ham');
+const navLinks = document.querySelector('.nav-links');
+
+ham.addEventListener('click', () => {
+    navLinks.classList.toggle('active');
+    ham.classList.toggle('active');
+});
+
+    </script>
+    
+</body>
+</html>
